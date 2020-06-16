@@ -1,0 +1,22 @@
+(see grid.svg)
+one tile (6*5.2m):
+	side length = 3m
+	distance between parallell sides: 3⋅√3 = 5.196152422706632 ~ 5.2m
+	height = 1m
+	area = 27⋅√3/2 = 23.3826859 m2
+
+one gridcell (39.6*36.4m, 7 tiles across, 4 tiles side):
+	side = 4 tiles (20.8m)
+	area = (4+5+6)*2+7 = 37 tiles = 865 m2
+
+one island (7 gridcells across, 4 gridcells side):
+	area = 1104 tiles = 25 814 m2
+	side = ~98 m 
+	width = 22*5.2+21*3 = 177.4m
+	height = 34 * 5.2m = 176m
+
+traffic is flowing in one-way channels between the islands in a regular pattern.
+there are green, red, and mixed islands.
+green islands are always taken from right
+red islands from the left
+all channels are in the edge of at least one red or green island
