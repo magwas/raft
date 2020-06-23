@@ -310,6 +310,8 @@ best case: 100
           <bounds x="522" y="180" width="-1" height="-1"/>
           <sourceConnection xsi:type="zenta:Connection" id="53067afc-1458-4fac-9082-3909bd89120a" source="62f3beff-f1e2-43a4-b9b8-8577798cb150" target="198c8ab8-18c4-44a6-9e64-6dc655faf41e" relationship="2f383984-7db3-4b10-a341-a3aad949fc68"/>
           <sourceConnection xsi:type="zenta:Connection" id="1f38f2a0-6193-409b-88b3-332aed0a0053" source="62f3beff-f1e2-43a4-b9b8-8577798cb150" target="bacbcc57-4ade-4a0f-9040-60d0060e975e" relationship="9b2d77d7-e698-4da9-a0f2-c6e0e294bc91"/>
+          <sourceConnection xsi:type="zenta:Connection" id="d403ea8b-78de-483b-ae25-b40a54679bda" source="62f3beff-f1e2-43a4-b9b8-8577798cb150" target="8e11fdf4-a368-4bf4-a041-142e0924f59a" relationship="5fcae0d5-549c-424d-be15-195b80e8457f"/>
+          <sourceConnection xsi:type="zenta:Connection" id="2aac66dc-3de1-40f5-955f-eef8d3c5924d" source="62f3beff-f1e2-43a4-b9b8-8577798cb150" target="bea65813-fb9b-4a43-bbdb-8778a527eff7" relationship="d645d63e-2b62-491f-a5a5-a403d9fc8589"/>
         </child>
         <child xsi:type="zenta:DiagramObject" id="4c58d70a-803c-453f-b025-3ff5d640990e" zentaElement="e35cd081-a0ee-4859-9895-0e90be18e368">
           <bounds x="372" y="288" width="-1" height="-1"/>
@@ -329,14 +331,38 @@ best case: 100
         <child xsi:type="zenta:DiagramObject" id="bacbcc57-4ade-4a0f-9040-60d0060e975e" targetConnections="1f38f2a0-6193-409b-88b3-332aed0a0053" zentaElement="fb06014a-de47-4976-97ac-59eeca2eb5cf">
           <bounds x="588" y="72" width="-1" height="-1"/>
         </child>
+        <child xsi:type="zenta:DiagramObject" id="8e11fdf4-a368-4bf4-a041-142e0924f59a" targetConnections="d403ea8b-78de-483b-ae25-b40a54679bda" zentaElement="976cd087-e532-4293-aaf9-1a9b23af317d">
+          <bounds x="940" y="141" width="-1" height="-1"/>
+        </child>
+        <child xsi:type="zenta:DiagramObject" id="bea65813-fb9b-4a43-bbdb-8778a527eff7" targetConnections="2aac66dc-3de1-40f5-955f-eef8d3c5924d" zentaElement="e7216d73-08c4-4c63-98d4-bade065ea948">
+          <bounds x="994" y="259" width="-1" height="-1"/>
+        </child>
       </element>
       <element xsi:type="zenta:BasicObject" name="biomass" id="9749f61e-f036-4d6a-8a7b-449c6148c73e" ancestor="c6c183c9-9bea-40f1-b0aa-269c38527a2a">
         <documentation>measure: kg/month</documentation>
       </element>
-      <element xsi:type="zenta:BasicObject" name="farming" id="2a2ce884-67c5-4994-856a-36b815ce0c3d" ancestor="106414c0-27bd-425f-9bf7-7fc820aa1ff8"/>
+      <element xsi:type="zenta:BasicObject" name="farming" id="2a2ce884-67c5-4994-856a-36b815ce0c3d" ancestor="106414c0-27bd-425f-9bf7-7fc820aa1ff8">
+        <documentation>'food': island*food_yield_per_island,
+'biomass': island*biomass_yield_per_island,
+</documentation>
+      </element>
       <element xsi:type="zenta:BasicObject" name="food" id="fb06014a-de47-4976-97ac-59eeca2eb5cf" ancestor="c6c183c9-9bea-40f1-b0aa-269c38527a2a">
         <documentation>measure: kg/month</documentation>
       </element>
+      <element xsi:type="zenta:BasicObject" name="food yield per island" id="976cd087-e532-4293-aaf9-1a9b23af317d" ancestor="ef6a5113-8b30-4004-a40a-f635c0a343d8">
+        <documentation>measure = kg/month/unit
+best guess: 1000
+worst case:
+best case:</documentation>
+      </element>
+      <element xsi:type="zenta:BasicRelationship" id="5fcae0d5-549c-424d-be15-195b80e8457f" ancestor="07acd486-af83-4789-9f98-103e7a8bcea0" source="2a2ce884-67c5-4994-856a-36b815ce0c3d" target="976cd087-e532-4293-aaf9-1a9b23af317d"/>
+      <element xsi:type="zenta:BasicObject" name="biomass yield per island" id="e7216d73-08c4-4c63-98d4-bade065ea948" ancestor="ef6a5113-8b30-4004-a40a-f635c0a343d8">
+        <documentation>measure = kg/month/unit
+best guess: 1000
+worst case:
+best case:</documentation>
+      </element>
+      <element xsi:type="zenta:BasicRelationship" id="d645d63e-2b62-491f-a5a5-a403d9fc8589" ancestor="07acd486-af83-4789-9f98-103e7a8bcea0" source="2a2ce884-67c5-4994-856a-36b815ce0c3d" target="e7216d73-08c4-4c63-98d4-bade065ea948"/>
     </folder>
     <folder name="sustenance" id="fdda6fce-e335-4aab-89fa-69167faf30cb">
       <element xsi:type="zenta:ZentaDiagramModel" name="sustenance" id="7fa275ff-fca1-476e-8689-738ae645ba17">
