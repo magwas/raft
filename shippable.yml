@@ -13,6 +13,4 @@ build:
   ci:
     - /usr/local/toolchain/tools/Script
   on_success:
-    - /usr/local/toolchain/tools/publish
-  on_failure:
-    - /usr/local/toolchain/tools/publish
+    - tools/publish
