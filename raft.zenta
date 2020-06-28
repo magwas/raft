@@ -1257,6 +1257,7 @@ best case: 1
           <sourceConnection xsi:type="zenta:Connection" id="b1dff115-3541-4890-ba74-fc2c0f62d52a" source="3be81474-eb77-4539-881b-e334b924bbfc" target="b3f259e5-1a2c-4175-bf30-9095e8284d13" relationship="6f1d22a1-5efa-4b55-8399-e1f3f2dbf647"/>
           <sourceConnection xsi:type="zenta:Connection" id="6a4dc5a0-1ee8-4644-bc61-59c2316d7875" source="3be81474-eb77-4539-881b-e334b924bbfc" target="b8ce59fa-3104-4289-9400-b05d20841788" relationship="7001a82e-a275-43f3-9d05-dac9fc595b0f"/>
           <sourceConnection xsi:type="zenta:Connection" id="d24c9faf-e705-4bdd-a446-5e262f16419c" source="3be81474-eb77-4539-881b-e334b924bbfc" target="2760f0e2-3c10-4617-b741-e3321fd0e5ac" relationship="f7628fda-e791-4f02-a091-cc56dc4a9b78"/>
+          <sourceConnection xsi:type="zenta:Connection" id="0cc3803f-8712-4ccd-ab21-7e4f9ba45d0e" source="3be81474-eb77-4539-881b-e334b924bbfc" target="e87b42dc-84ef-4f39-89fc-08a6e29df8da" relationship="00475746-1979-475c-9ccb-bb4e5c68220a"/>
         </child>
         <child xsi:type="zenta:DiagramObject" id="b3f259e5-1a2c-4175-bf30-9095e8284d13" targetConnections="b1dff115-3541-4890-ba74-fc2c0f62d52a" zentaElement="7e71d6eb-9375-427a-af6f-29e45d956586">
           <bounds x="948" y="658" width="-1" height="-1"/>
@@ -1452,6 +1453,13 @@ best case: 1
           <bounds x="1214" y="209" width="-1" height="-1"/>
           <sourceConnection xsi:type="zenta:Connection" id="af43dad4-3e49-4fba-9df9-ae417c5ebdc5" source="36018038-f618-496e-b6f5-4a16c1381bc0" target="8719b993-30bc-48aa-ba48-3f13e283f9be" relationship="482698eb-1fb7-4141-80cf-5091f9a19cb5"/>
         </child>
+        <child xsi:type="zenta:DiagramObject" id="e87b42dc-84ef-4f39-89fc-08a6e29df8da" targetConnections="0cc3803f-8712-4ccd-ab21-7e4f9ba45d0e" zentaElement="51fcd88b-9e31-4525-bd73-43736ce77fd4">
+          <bounds x="817" y="767" width="-1" height="-1"/>
+          <sourceConnection xsi:type="zenta:Connection" id="00a3013d-f055-431b-875c-5674bbd4734a" source="e87b42dc-84ef-4f39-89fc-08a6e29df8da" target="963266e7-ada3-4159-a3ac-fec98169f497" relationship="4ee8c895-424c-442f-9c41-55c7c53bade4"/>
+        </child>
+        <child xsi:type="zenta:DiagramObject" id="963266e7-ada3-4159-a3ac-fec98169f497" targetConnections="00a3013d-f055-431b-875c-5674bbd4734a" zentaElement="dc5a53a8-6431-42fb-a290-37a607a5b7e8">
+          <bounds x="636" y="732" width="-1" height="-1"/>
+        </child>
       </element>
       <element xsi:type="zenta:BasicObject" name="seawater" id="758c4a37-2e00-42fa-8def-3c0b34a45656" ancestor="c6c183c9-9bea-40f1-b0aa-269c38527a2a"/>
       <element xsi:type="zenta:BasicObject" name="electrolysis" id="989c4c3a-0319-47af-ac7e-fe8efccd5abd" ancestor="106414c0-27bd-425f-9bf7-7fc820aa1ff8"/>
@@ -1580,7 +1588,10 @@ best case: 1
       <element xsi:type="zenta:BasicRelationship" id="3f2a1009-df79-4872-91b2-ad6fa9e111d8" ancestor="f3409510-75ec-4fff-9764-4bf097b9bd3b" source="4ea592d9-a782-40a6-9c58-9bb03737f88a" target="62ef4a35-5dba-432b-b034-79313ea308c1"/>
       <element xsi:type="zenta:BasicObject" name="etherne" id="67c7e236-f70b-40d9-bf69-4f7cc91e8383" ancestor="c6c183c9-9bea-40f1-b0aa-269c38527a2a"/>
       <element xsi:type="zenta:BasicRelationship" id="ece721fd-4df9-4eab-ba26-75b8d940fc5e" ancestor="ee1503e8-c85f-428f-95f3-951a864d15ff" source="fd23628b-b43c-4329-97a6-6105caf9077d" target="67c7e236-f70b-40d9-bf69-4f7cc91e8383"/>
-      <element xsi:type="zenta:BasicObject" name="polymerization" id="fefd7b7a-87ce-44bd-82af-6c3d2698569b" ancestor="106414c0-27bd-425f-9bf7-7fc820aa1ff8"/>
+      <element xsi:type="zenta:BasicObject" name="polymerization" id="fefd7b7a-87ce-44bd-82af-6c3d2698569b" ancestor="106414c0-27bd-425f-9bf7-7fc820aa1ff8">
+        <documentation>https://tel.archives-ouvertes.fr/tel-01228981/document
+</documentation>
+      </element>
       <element xsi:type="zenta:BasicRelationship" id="126166a6-d010-46c7-827d-fccb0297a121" ancestor="f3409510-75ec-4fff-9764-4bf097b9bd3b" source="67c7e236-f70b-40d9-bf69-4f7cc91e8383" target="fefd7b7a-87ce-44bd-82af-6c3d2698569b"/>
       <element xsi:type="zenta:BasicObject" name="PET" id="dbe6aaf7-005e-4230-9d5c-7c021d9b3f41" ancestor="c6c183c9-9bea-40f1-b0aa-269c38527a2a"/>
       <element xsi:type="zenta:BasicRelationship" id="c85af825-070a-40a5-8ea7-2dfe639f5d2b" ancestor="ee1503e8-c85f-428f-95f3-951a864d15ff" source="fefd7b7a-87ce-44bd-82af-6c3d2698569b" target="dbe6aaf7-005e-4230-9d5c-7c021d9b3f41"/>
@@ -1612,6 +1623,13 @@ best case: 1
       <element xsi:type="zenta:BasicRelationship" id="e8cded02-1b6e-49b6-847e-42a9a56a1dcf" ancestor="f3409510-75ec-4fff-9764-4bf097b9bd3b" source="67c7e236-f70b-40d9-bf69-4f7cc91e8383" target="66536235-0905-4f17-85d1-e75cebefa336"/>
       <element xsi:type="zenta:BasicRelationship" id="47c240a2-7f7a-427f-a664-045fa5747f34" ancestor="f3409510-75ec-4fff-9764-4bf097b9bd3b" source="6f9d289d-5dfb-4baa-af91-58e0d7aa6d90" target="66536235-0905-4f17-85d1-e75cebefa336"/>
       <element xsi:type="zenta:BasicRelationship" id="482698eb-1fb7-4141-80cf-5091f9a19cb5" ancestor="ee1503e8-c85f-428f-95f3-951a864d15ff" source="66536235-0905-4f17-85d1-e75cebefa336" target="d641e994-e245-40f8-ba9d-075014017d45"/>
+      <element xsi:type="zenta:BasicObject" name="microwave-assisted synthesis" id="51fcd88b-9e31-4525-bd73-43736ce77fd4" ancestor="106414c0-27bd-425f-9bf7-7fc820aa1ff8">
+        <documentation>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5750028/
+</documentation>
+      </element>
+      <element xsi:type="zenta:BasicRelationship" id="00475746-1979-475c-9ccb-bb4e5c68220a" ancestor="f3409510-75ec-4fff-9764-4bf097b9bd3b" source="30a3a515-709f-447d-9c35-b55224552213" target="51fcd88b-9e31-4525-bd73-43736ce77fd4"/>
+      <element xsi:type="zenta:BasicObject" name="butene" id="dc5a53a8-6431-42fb-a290-37a607a5b7e8" ancestor="c6c183c9-9bea-40f1-b0aa-269c38527a2a"/>
+      <element xsi:type="zenta:BasicRelationship" id="4ee8c895-424c-442f-9c41-55c7c53bade4" ancestor="ee1503e8-c85f-428f-95f3-951a864d15ff" source="51fcd88b-9e31-4525-bd73-43736ce77fd4" target="dc5a53a8-6431-42fb-a290-37a607a5b7e8"/>
     </folder>
   </folder>
 </zenta:model>

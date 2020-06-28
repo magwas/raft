@@ -1,0 +1,18 @@
+build_image: kodekonveyor/toolchain:2.2
+language: python
+python:
+  - 2.7
+integrations:
+  key:
+    - integrationName: kodekonveyor
+      type: sshKey
+  generic:
+    - integrationName: kkpipeline
+
+build:
+  ci:
+    - /usr/local/toolchain/tools/Script
+  on_success:
+    - /usr/local/toolchain/tools/publish
+  on_failure:
+    - /usr/local/toolchain/tools/publish
