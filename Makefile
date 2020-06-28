@@ -10,6 +10,7 @@ all: raft.compiled
 include /usr/share/zenta-tools/model.rules
 
 clean:
+	rm -rf raft
 	git clean -fdx
 
 

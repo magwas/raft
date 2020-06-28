@@ -1,0 +1,5 @@
+#!/bin/bash
+set -xe
+git add raft
+git commit -am "documentation update"
+
