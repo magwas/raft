@@ -1,5 +1,12 @@
 #!/bin/bash
 set -xe
-git add raft
-git commit -am "documentation update"
-
+if [ $IS_PULL_REQUEST = 'false' -a $BRANCH = 'master' ]
+then
+	git add raft
+	git commit -am "documentation update"
+	echo -e "Host deployment \n\thostname github.com\n\tIdentityFile /tmp/ssh/raft \n\tIdentitiesOnly yes" > ~/.ssh/config
+	git remote rm origin
+	git remote add origin git@deployment:magwas/raft.git
+	ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
+	git push -f --set-upstream origin $BRANCH:gh_pages
+fi
