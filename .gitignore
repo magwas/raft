@@ -1,1 +1,15 @@
-raft.zenta.bak
+\#*.dxf
+raft.compiled
+raft.consistency.stderr
+raft.consistencycheck
+raft.docbook
+raft.html
+raft.interfaces
+raft.objlist
+raft.objlist.html
+raft.pics/
+raft.rich
+raft.richescape
+raft.stubs
+raft.testdata
+target/
