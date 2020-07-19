@@ -1,12 +1,4 @@
-I have an idea on how to sequester meaningful amounts of carbon from the athmosphere and become inconceivably rich as a side effect.
-
-Actually, not _that_ rich, as the project is open. The scale still means that the core team cannot avoid getting rich.
-
-(And anyways: if it works, I won't have any reason to be richer than I already am.)
-
-So the idea:
-
-To sequester meaningful amounts, we need a positive feedback process not constrained with resources.
+To sequester meaningful amounts of carbon from the athmosphere, we need a positive feedback process not constrained with resources.
 
 Where we can find enough material and energy (area) not to be a constraint?
 
@@ -22,4 +14,6 @@ We source anything which cannot be made from plastic from the land. We sell seaf
 
 If you are interested, drop me an email.
 
+[The process model](raft)
 
+[Structure](structure.thml)
