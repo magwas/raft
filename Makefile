@@ -6,10 +6,15 @@ export JAVA_TARGET=none
 export CONSISTENCY_INPUTS=raft.rich 
 export TOOLCHAINDIR=/usr/local/toolchain
 
-all: target/zentaworkaround.ok raft.compiled
+all: target/zentaworkaround.ok raft.compiled Tile_with_walls.png
 
 include /usr/share/zenta-tools/model.rules
 
+dia:
+	sudo apt -y install dia
+
+Tile_with_walls.png: dia
+	dia Tile_with_walls.dxf -e Tile_with_walls.png
 clean:
 	rm -rf raft
 	git clean -fdx
