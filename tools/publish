@@ -2,7 +2,7 @@
 set -xe
 if [ $IS_PULL_REQUEST = 'false' -a $BRANCH = 'master' ]
 then
-	git add raft Tile_with_walls.png
+	git add -f raft Tile_with_walls.png
 	git commit -am "documentation update"
 	echo -e "Host deployment \n\thostname github.com\n\tIdentityFile /tmp/ssh/raft \n\tIdentitiesOnly yes" > ~/.ssh/config
 	git remote rm origin
