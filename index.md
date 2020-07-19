@@ -16,4 +16,9 @@ If you are interested, drop me an email.
 
 [The process model](raft)
 
-[Structure](structure.thml)
+[Structure](structure.html)
+
+![tile](Tile_with_walls.png)
+
+![an island](grid.svg)
+
